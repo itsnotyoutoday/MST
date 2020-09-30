@@ -13,7 +13,9 @@ namespace MasterServerToolkit.Games
     public class EmailConfirmationView : UIView
     {
         [Header("Components"), SerializeField]
+#pragma warning disable 0649
         private TMP_InputField confirmationCodeInputField;
+#pragma warning restore 0649
 
         public string ConfirmationCode
         {

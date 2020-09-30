@@ -22,13 +22,14 @@ namespace MasterServerToolkit.MasterServer
 
         [Header("Controller Settings"), SerializeField]
         protected LogLevel logLevel = LogLevel.Info;
-
+#pragma warning disable 0649
         [SerializeField]
         private TextAsset templateHtml;
         [SerializeField]
         private TextAsset[] cssFiles;
         [SerializeField]
         private TextAsset[] javascriptFiles;
+#pragma warning restore 0649
 
         public virtual void Initialize(HttpServerModule server)
         {

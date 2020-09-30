@@ -7,10 +7,12 @@ namespace MasterServerToolkit.MasterServer
 {
     public class CensorModule : BaseServerModule
     {
+#pragma warning disable 0649
         protected List<string> censoredWords;
 
         [Header("Settings"), SerializeField]
         private TextAsset[] wordsLists;
+#pragma warning restore 0649
 
         public override void Initialize(IServer server)
         {

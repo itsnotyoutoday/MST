@@ -15,6 +15,7 @@ namespace MasterServerToolkit.Games
         #region INSPECTOR
 
         [Header("Components"), SerializeField]
+#pragma warning disable 0649
         private TMP_InputField usernameInputField;
         [SerializeField]
         private TMP_InputField emailInputField;
@@ -22,6 +23,7 @@ namespace MasterServerToolkit.Games
         private TMP_InputField passwordInputField;
         [SerializeField]
         private TMP_InputField confirmPasswordInputField;
+#pragma warning restore 0649
 
         [Header("Editor Settings"), SerializeField]
         protected string defaultUsername = "qwerty";

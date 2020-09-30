@@ -9,20 +9,20 @@ namespace MasterServerToolkit.Games
     {
         #region INSPECTOR
 
+#pragma warning disable 0649
         [SerializeField]
         private TextMeshProUGUI gameNameText;
 
         [SerializeField]
         private TextMeshProUGUI gameAddressText;
-
         [SerializeField]
         private TextMeshProUGUI gameRegionText;
-
         [SerializeField]
         private TextMeshProUGUI gamePlayersText;
 
         [SerializeField]
         private UIButton connectButton;
+#pragma warning restore 0649
 
         #endregion
 

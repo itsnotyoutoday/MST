@@ -13,6 +13,7 @@ namespace CommandTerminal
 
     public class Terminal : Singleton<Terminal>
     {
+#pragma warning disable 0649
         [Header("Window")]
         [Range(0, 1)]
         [SerializeField]
@@ -67,6 +68,7 @@ namespace CommandTerminal
         public static CommandShell Shell { get; private set; }
         public static CommandHistory History { get; private set; }
         public static CommandAutocomplete Autocomplete { get; private set; }
+#pragma warning restore 0649
 
         public static bool IssuedError
         {

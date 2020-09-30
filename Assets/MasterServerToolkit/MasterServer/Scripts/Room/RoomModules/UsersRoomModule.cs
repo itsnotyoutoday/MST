@@ -24,8 +24,9 @@ namespace MasterServerToolkit.MasterServer
         /// <summary>
         /// Fires when new player joined room
         /// </summary>
+#pragma warning disable 0067
         public event Action<IRoomPlayerPeerExtension> OnPlayerJoinedEvent;
-
+#pragma warning restore 0067
         /// <summary>
         /// Fires when new player left room
         /// </summary>

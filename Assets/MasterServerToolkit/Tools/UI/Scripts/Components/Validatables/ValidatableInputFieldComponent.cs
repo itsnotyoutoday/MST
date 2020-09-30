@@ -10,6 +10,7 @@ namespace Aevien.UI
 {
     public class ValidatableInputFieldComponent : MonoBehaviour, IValidatableComponent
     {
+#pragma warning disable 0649
         private Color[] validationColorAtStart;
 
         [Header("Base Settings"), SerializeField]
@@ -37,6 +38,7 @@ namespace Aevien.UI
         private TMP_InputField compareToInputField;
         [SerializeField, TextArea(2, 10)]
         protected string compareErrorMessage;
+#pragma warning restore 0649
 
         protected virtual void Awake()
         {

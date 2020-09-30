@@ -10,10 +10,11 @@ namespace Aevien.UI
     [RequireComponent(typeof(Button))]
     public class UIButton : MonoBehaviour
     {
+#pragma warning disable 0649
         private Button button;
-
         [Header("Components"), SerializeField]
         private TextMeshProUGUI lableText;
+#pragma warning restore 0649
         [SerializeField]
         private string lableValue = "Click me";
 

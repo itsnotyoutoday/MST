@@ -82,6 +82,7 @@ namespace MasterServerToolkit.MasterServer
         /// </summary>
         public event Action OnRoomServerRegisteredEvent;
 
+#pragma warning disable 0067
         /// <summary>
         /// Fires when new playerjoined room
         /// </summary>
@@ -96,6 +97,7 @@ namespace MasterServerToolkit.MasterServer
         /// Call this when you use <see cref="RoomTerminator"/> and want to check termination conditions
         /// </summary>
         public event Action OnCheckTerminationConditionEvent;
+#pragma warning restore 0067
 
         protected override void Awake()
         {

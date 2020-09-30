@@ -22,9 +22,11 @@ namespace MasterServerToolkit.Games
         private Color offlineStatusColor = Color.red;
 
         [Header("Components"), SerializeField]
+#pragma warning disable 0649
         private Image statusImage;
         [SerializeField]
         private TextMeshProUGUI statusText;
+#pragma warning restore 0649
         #endregion
 
         public IClientSocket Connection => Mst.Connection;

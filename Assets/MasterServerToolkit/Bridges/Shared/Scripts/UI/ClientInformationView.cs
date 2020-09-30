@@ -8,11 +8,13 @@ namespace MasterServerToolkit.Games
 {
     public class ClientInformationView : UIView
     {
+#pragma warning disable 0649
         private TextMeshProUGUI helpOutput;
         private UIView helpViewSummaryPanel;
 
         [Header("Components"), SerializeField]
         private TextAsset helpText;
+#pragma warning restore 0649
 
         protected override void Start()
         {

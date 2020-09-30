@@ -10,6 +10,7 @@ namespace MasterServerToolkit.Games
     public class CreateNewRoomView : UIView
     {
         [Header("Components"), SerializeField]
+#pragma warning disable 0649
         private TMP_InputField roomNameInputField;
         [SerializeField]
         private TMP_InputField roomMaxConnectionsInputField;
@@ -17,6 +18,7 @@ namespace MasterServerToolkit.Games
         private TMP_InputField roomRegionNameInputField;
         [SerializeField]
         private TMP_InputField roomPasswordInputField;
+#pragma warning restore 0649
 
         protected override void Awake()
         {

@@ -10,10 +10,12 @@ namespace MasterServerToolkit.Games
 {
     public class SignInView : UIView
     {
+#pragma warning disable 0649
         [Header("Components"), SerializeField]
         private TMP_InputField usernameInputField;
         [SerializeField]
         private TMP_InputField passwordInputField;
+#pragma warning restore 0649
 
         public string Username
         {

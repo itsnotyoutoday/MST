@@ -13,13 +13,14 @@ namespace MasterServerToolkit.Games
     public class GamesListView : UIView
     {
         [Header("Components"), SerializeField]
+#pragma warning disable 0649
         private GameListItem gameItemPrefab;
         [SerializeField]
         private RectTransform listContainer;
         [SerializeField]
         private TextMeshProUGUI statusInfoText;
-
         public UnityEvent OnStartGameEvent;
+#pragma warning restore 0649
 
         protected override void Awake()
         {

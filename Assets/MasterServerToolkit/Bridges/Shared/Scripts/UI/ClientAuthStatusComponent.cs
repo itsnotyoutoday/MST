@@ -19,11 +19,13 @@ namespace MasterServerToolkit.Games
         private Color authorizedStatusColor = Color.green;
         [SerializeField]
         private Color guestStatusColor = Color.yellow;
-
         [Header("Components"), SerializeField]
+#pragma warning disable 0649
         private Image statusImage;
         [SerializeField]
         private TextMeshProUGUI statusText;
+#pragma warning restore 0649
+
         #endregion
 
         protected virtual void Update()

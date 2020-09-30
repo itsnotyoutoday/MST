@@ -13,11 +13,13 @@ namespace MasterServerToolkit.Games
     public class PasswordResetView : UIView
     {
         [Header("Components"), SerializeField]
+#pragma warning disable 0649
         private TMP_InputField resetCodeInputField;
         [SerializeField]
         private TMP_InputField newPasswordInputField;
         [SerializeField]
         private TMP_InputField newPasswordConfirmInputField;
+#pragma warning restore 0649
 
         public string ResetCode
         {

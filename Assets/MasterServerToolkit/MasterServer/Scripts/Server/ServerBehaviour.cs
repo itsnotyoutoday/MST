@@ -27,8 +27,10 @@ namespace MasterServerToolkit.MasterServer
         [SerializeField, Tooltip("If true, will go through children of this GameObject, and initialize modules that are found on the way")]
         private bool lookInChildrenOnly = true;
 
+#pragma warning disable 0649
         [SerializeField]
         private List<PermissionEntry> permissions;
+#pragma warning restore 0649
 
         [SerializeField, Range(10, 120), Tooltip("Frame rate the server will be running. You can limit it from 10 - 120")]
         private int targetFrameRate = 30;

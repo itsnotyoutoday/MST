@@ -11,12 +11,13 @@ namespace Aevien.UI
         /// Current value of progress
         /// </summary>
         protected float targetValue = 0f;
-
+#pragma warning disable 0649
         [Header("Progress Components"), SerializeField]
         private Image progressImage;
 
         [Header("Progress Settings"), SerializeField]
         protected float progressMaxValue;
+#pragma warning restore 0649
 
         protected virtual void Awake()
         {
