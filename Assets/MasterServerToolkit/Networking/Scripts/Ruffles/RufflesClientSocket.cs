@@ -77,6 +77,11 @@ namespace MasterServerToolkit.Networking {
             throw new NotImplementedException();
         }
 
+        public void Update()
+        {
+            throw new NotImplementedException();
+        }
+
         public void WaitForConnection(Action<IClientSocket> connectionCallback, float timeoutSeconds)
         {
             throw new NotImplementedException();
